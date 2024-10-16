@@ -2,7 +2,6 @@
 // Require the constants
 require('./app/config/constantes.php');
 ?>
-?>
 <!doctype html>
 <html lang="es">
 <head>
@@ -131,33 +130,33 @@ body {
 
 <body>
     <div class="wrapper">
-        <form action="app/login/register.php" class="form" method="POST">
+        <form method="POST" action="app/login/register.php" class="form">
             <h1 class="title font-mono">Crear usuario</h1>
             <?php
             include "modelo/conexion.php";
             include "controlador/crear_usuario.php";
             ?>
             <div class="inp">
-            <label for="exampleInputEmail1" class="form-label">nombre</label>
+            <label for="exampleInputEmail1" class="">nombre</label>
                 <input type="text" name="name" id="" class="input" placeholder="Nombre Completo">
             </div>
 
             <div class="inp">
-            <label for="phone" class="form-label">telefono</label>
+            <label for="phone" class="">telefono</label>
             <input type="text" name="phone" id="" class="input" placeholder="Numero de Telefono">
             </div>
 
             <div class="inp">
-            <label for="email" class="form-label">nombre de usuario</label>
+            <label for="email" class="">nombre de usuario</label>
             <input type="text" name="email" id="" class="input" placeholder="usuario">
             </div>
 
             <div class="inp">
-            <label for="pass" class="form-label">contraseña</label>
+            <label for="pass" class="">contraseña</label>
             <input type="password" name="pass" id="" class="input" placeholder="contraseña">
             </div>
 
-            <button type="submit" name="btnregistrar" value="ok" class="btnagregar btn-primary submit">agregar</button>
+            <button type="submit"  name="btnregistrar" value="ok" class="btnagregar btn-primary submit">agregar</button>
             <p class="footer">¿ya tienes una cuenta? <a href="login.php" class="link">Iniciar Secion</a></p>
         </form>
     

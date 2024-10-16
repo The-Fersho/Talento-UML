@@ -308,13 +308,13 @@ require(ROOT_PATH . DS . 'app' . DS . 'login' . DS . 'verificar-login.php');
                         <img src="/assets/img/perfil1.png" alt="Ana García" class="student-avatar">
                         <h3>Ana García</h3>
                         <p>Ingeniería Informática - 3º año</p>
-                        <a href="perfil.html" class="btn">Ver perfil</a>
+                        <a href="perfil.php" class="btn">Ver perfil</a>
                     </div>
                     <div class="student-card">
                         <img src="/assets/img/perfil5.png" alt="Carlos Rodríguez" class="student-avatar">
                         <h3>Carlos Rodríguez</h3>
                         <p>Administración de Empresas - 4º año</p>
-                        <a href="#" class="btn">Ver perfil</a>
+                        <a href="perfilcarlos.php" class="btn">Ver perfil</a>
                     </div>
                     <div class="student-card">
                         <img src="/assets/img/perfil3.png" alt="Laura Martínez" class="student-avatar">

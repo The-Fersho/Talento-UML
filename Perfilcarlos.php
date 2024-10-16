@@ -130,7 +130,7 @@ require(ROOT_PATH . DS . 'app' . DS . 'login' . DS . 'verificar-login.php');
         <div class="profile-header">
             <img src="/src/image/perfil1.png" alt="Foto de Ana García" class="profile-image">
             <div class="profile-info">
-                <h1>Ana García</h1>
+                <h1>Carlos Rodriguez</h1>
                 <p>Estudiante de Ingeniería Informática - 3º año</p>
                 <p>Universidad Tecnológica Nacional</p>
                 <p>ana.garcia@email.com | +54 9 11 1234-5678</p>
