@@ -14,6 +14,8 @@ require('./app/config/constantes.php');
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="./style.css"> -->
     <link rel="stylesheet" href="cl-icon/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         * {
   margin: 0;
@@ -41,6 +43,7 @@ body {
   border: 3px solid #76bdff;
   box-shadow: 0 0 50px 0 #099dff;
 }
+
 .form {
   display: flex;
   flex-direction: column;
@@ -48,10 +51,10 @@ body {
   align-items: center;
 }
 .title {
-  font-size: 25px;
-  color: #000000;
-  padding-top: 15px;
-  
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 17px;
+  color:#000000;
 }
 .inp {
   padding-bottom: 5px;
@@ -62,18 +65,18 @@ body {
   outline: none;
   background: none;
   width: 260px;
-  margin-top: 20px;
+  margin-top: 10px;
   padding-right: 10px;
-  font-size: 17px;
+  font-size: 14px;
   color: rgb(0, 4, 255);
 }
 .submit {
   border: none;
   outline: none;
   width: 288px;
-  margin-top: 25px;
+  margin-top: 15px;
   padding: 10px 0;
-  font-size: 20px;
+  font-size: 15px;
   border-radius: 40px;
   letter-spacing: 1px;
   cursor: pointer;
@@ -81,7 +84,9 @@ body {
   background: linear-gradient(45deg,  rgb(0, 4, 255), #76bdff);
 }
 .footer {
-  margin-top: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 20px;
   letter-spacing: 0.5px;
   font-size: 14px;
   color: #000000;
@@ -89,16 +94,17 @@ body {
 .link {
   color: #76bdff;
   text-decoration: none;
+  padding-left: 5px;
 }
 .banner {
   position: absolute;
   top: 0;
   right: 0;
-  width: 450px;
-  height: 390px;
+  width: 460px;
+  height: 366px;
   background: linear-gradient(to right, rgb(0, 4, 255), #76bdff);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%);
-  padding-right: 70px;
+  padding-right: 60px;
   text-align: right;
   display: flex;
   flex-direction: column;
@@ -130,35 +136,33 @@ body {
 
 <body>
     <div class="wrapper">
-        <form method="POST" action="app/login/register.php" class="form">
-            <h1 class="title font-mono">Crear usuario</h1>
+    <form class="form" method="POST">
+            <h3 class="text-center title">Crear usuario Nuevo</h3>
             <?php
             include "modelo/conexion.php";
             include "controlador/crear_usuario.php";
             ?>
+
             <div class="inp">
-            <label for="exampleInputEmail1" class="">nombre</label>
-                <input type="text" name="name" id="" class="input" placeholder="Nombre Completo">
+              <input for="exampleInputEmail1" type="text" class="input form-control" name="name" placeholder="Nombre">
             </div>
 
             <div class="inp">
-            <label for="phone" class="">telefono</label>
-            <input type="text" name="phone" id="" class="input" placeholder="Numero de Telefono">
+              <input for="phone" type="text" class="input form-control" name="phone" placeholder="Telefno">
             </div>
 
             <div class="inp">
-            <label for="email" class="">nombre de usuario</label>
-            <input type="text" name="email" id="" class="input" placeholder="usuario">
+              <input for="email" type="text" class="input form-control" name="email" placeholder="correo o usuario">
             </div>
 
             <div class="inp">
-            <label for="pass" class="">contraseña</label>
-            <input type="password" name="pass" id="" class="input" placeholder="contraseña">
+              <input type="password" for="pass" class="input form-control" name="pass"placeholder="Contraseña">
             </div>
-
-            <button type="submit"  name="btnregistrar" value="ok" class="btnagregar btn-primary submit">agregar</button>
-            <p class="footer">¿ya tienes una cuenta? <a href="login.php" class="link">Iniciar Secion</a></p>
-        </form>
+            <div class="centrar">
+              <button type="submit" name="btnregistrar" value="ok" class="btnagregar submit btn btn-primary">agregar</button>
+              <p class="footer">ya tienes una cuenta <a href="login.php" class="link">Inicia Sesíon</a></p>
+            </div>
+          </form>
     
         <div class="banner">
             <h1 class="wel_text">Bienvenid@</h1><br>

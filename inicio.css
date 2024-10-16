@@ -65,6 +65,7 @@ h1 {
 .content {
     flex-grow: 1;
     width: 100%;
+    padding-left: 15px;
 }
 .tabs {
     display: flex;

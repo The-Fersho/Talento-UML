@@ -19,15 +19,15 @@ if (isset($_GET['logout'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="cl-icon/css/all.min.css">
 </head>
 
 <body>
     <div class="wrapper">
         <form action="app/login/register.php" class="form" method="post">
-            <h1 class="title">Inicio</h1>
-            <?php
+        <h3 class="title">Crear usuario Nuevo</h3>
+        <?php
             if (isset($_GET['error'])) {
                 echo "<p class='text-danger'>Email o contraseña incorrectos</p>";
             }

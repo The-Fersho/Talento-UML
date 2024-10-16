@@ -14,22 +14,25 @@ require(ROOT_PATH . DS . 'app' . DS . 'login' . DS . 'verificar-login.php');
   <link rel="shortcut icon" href="./assets/img/favicon.ico" />
   <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="stylesheet" href="inicio.css"/>
+  <link rel="stylesheet" href="inicio.css" />
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
   <!-- llamar estilos css -->
-   <link rel="stylesheet" href="./navbar.css"/>
-  <title>Dashboard</title>
+  <link rel="stylesheet" href="./navbar.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Inicio</title>
 </head>
 
 <body class="text-blueGray-700 antialiased">
-  <noscript>Foodapp</noscript>
   <div id="root">
-    <nav class="fondonavegacion md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-xl bg-white flex flex-wrap items-center justify-between relative md:w-auto z-10 py-4 px-6">
-      <div class="md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full mx-auto">
+    <nav class="fondonavegacion md:w-72 md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-xl bg-white flex flex-wrap items-center justify-between relative z-10 py-4 px-6">
+      <div class="contenedornavegacion md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full mx-auto">
         <button class="cursor-pointer text-black opacity-50 md:hidden px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent" type="button" onclick="toggleNavbar('example-collapse-sidebar')">
           <i class="fas fa-bars"></i></button>
-        <a class="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0" href="javascript:void(0)">
+        <a class="nombreinicionavbar md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold py-4 px-0" href="javascript:void(0)">
           <?php
           echo $_SESSION["name"];
           ?>
@@ -67,7 +70,7 @@ require(ROOT_PATH . DS . 'app' . DS . 'login' . DS . 'verificar-login.php');
               <a href="#pablo" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">Another action</a>
 
               <a href="Crear_usuario.php" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700">
-                Crear usuario Nuevo
+                crear usuario Nuevo
               </a>
 
               <div class="h-0 my-2 border border-solid border-blueGray-100"></div>
@@ -77,7 +80,12 @@ require(ROOT_PATH . DS . 'app' . DS . 'login' . DS . 'verificar-login.php');
             </div>
           </li>
         </ul>
-        <div class="md:flex md:flex-col md:items-stretch md:opacity-100 md:relative md:mt-4 md:shadow-none shadow absolute top-0 left-0 right-0 z-40 overflow-y-auto overflow-x-hidden h-auto items-center flex-1 rounded hidden" id="example-collapse-sidebar">
+
+
+
+
+
+        <div class="contnavbar md:flex md:flex-col md:items-stretch md:opacity-100 md:relative md:mt-4  top-0 left-0 right-0 z-40 overflow-y-auto overflow-x-hidden h-auto items-center flex-1 rounded hidden" id="example-collapse-sidebar">
           <div class="md:min-w-full md:hidden block pb-4 mb-4 border-b border-solid border-blueGray-200">
             <div class="flex flex-wrap">
               <div class="w-6/12">
@@ -103,7 +111,7 @@ require(ROOT_PATH . DS . 'app' . DS . 'login' . DS . 'verificar-login.php');
             <li class="items-center">
 
 
-              <a class="text-pink-500 hover:text-pink-600 text-xs uppercase py-3 font-bold block" href="index.php">
+              <a class="text-black hover:text-black text-xs uppercase py-3 font-bold block" href="index.php">
                 <i class="fas fa-tv opacity-75 mr-2 text-sm"></i>Inicio</a>
 
 
@@ -144,21 +152,21 @@ require(ROOT_PATH . DS . 'app' . DS . 'login' . DS . 'verificar-login.php');
         </div>
       </nav>
       <!-- Header -->
-      <div class="relative radientback md:pt-32 pb-32 pt-12">
-        <div class="px-4 md:px-10 mx-auto w-full">
+      <div class="relative radientback md:pt-24 pb-32 pt-12">
+        <div class="px-4 md:pl-20 pr-10 mx-auto w-full">
           <div>
             <!-- Card stats -->
-            <div class="flex flex-wrap">
-              <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
-                <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+            <div class="cards w-auto flex flex-wrap">
+              <div class=" w-full lg:w-6/12 xl:w-3/12 px-4">
+                <div class="cards-elements relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
                   <div class="flex-auto p-4">
                     <div class="flex flex-wrap">
                       <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
                         <h5 class="text-blueGray-400 uppercase font-bold text-xs">
-                          Nuevos ingreso 1ros - 2dos Años
+                          Traffic
                         </h5>
                         <span class="font-semibold text-xl text-blueGray-700">
-                          500
+                          350,897
                         </span>
                       </div>
                       <div class="relative w-auto pl-4 flex-initial">
@@ -169,16 +177,16 @@ require(ROOT_PATH . DS . 'app' . DS . 'login' . DS . 'verificar-login.php');
                     </div>
                     <p class="text-sm text-blueGray-400 mt-4">
                       <span class="text-emerald-500 mr-2">
-                        <i class="fas fa-arrow-up"></i> 10%
+                        <i class="fas fa-arrow-up"></i> 3.48%
                       </span>
                       <span class="whitespace-nowrap">
-                        Año 2024
+                        Since last month
                       </span>
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
+              <div class="cards-elements w-full lg:w-6/12 xl:w-3/12 px-4">
                 <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
                   <div class="flex-auto p-4">
                     <div class="flex flex-wrap">
@@ -207,8 +215,8 @@ require(ROOT_PATH . DS . 'app' . DS . 'login' . DS . 'verificar-login.php');
                   </div>
                 </div>
               </div>
-              <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
-                <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+              <div class=" w-full lg:w-6/12 xl:w-3/12 px-4">
+                <div class=" cards-elementsrelative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
                   <div class="flex-auto p-4">
                     <div class="flex flex-wrap">
                       <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
@@ -236,8 +244,8 @@ require(ROOT_PATH . DS . 'app' . DS . 'login' . DS . 'verificar-login.php');
                   </div>
                 </div>
               </div>
-              <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
-                <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+              <div class="  w-full lg:w-6/12 xl:w-3/12 px-4">
+                <div class="cards-elements relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
                   <div class="flex-auto p-4">
                     <div class="flex flex-wrap">
                       <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
@@ -269,118 +277,118 @@ require(ROOT_PATH . DS . 'app' . DS . 'login' . DS . 'verificar-login.php');
           </div>
         </div>
       </div>
-      
-    <div class="container">
+
+      <div class="container">
         <div class="main-content">
-            <aside class="sidebar">
-                <button class="sidebar-toggle" aria-label="Mostrar filtros">▶</button>
-                <div class="filters">
-                    <select id="carrera">
-                        <option value="todas">Todas las carreras</option>
-                        <option value="Ingeniería Informática">Ingeniería Informática</option>
-                        <option value="Administración de Empresas">Administración de Empresas</option>
-                        <option value="Psicología">Psicología</option>
-                        <option value="Psicología">Enfermeria</option>
-                        <option value="Psicología">Ingles</option>
+          <aside class="sidebar">
+            <button class="sidebar-toggle" aria-label="Mostrar filtros">▶</button>
+            <div class="filters">
+              <select id="carrera">
+                <option value="todas">Todas las carreras</option>
+                <option value="Ingeniería Informática">Ingeniería Informática</option>
+                <option value="Administración de Empresas">Administración de Empresas</option>
+                <option value="Psicología">Psicología</option>
+                <option value="Psicología">Enfermeria</option>
+                <option value="Psicología">Ingles</option>
 
 
 
-                    </select>
-                    <select id="ano">
-                        <option value="todos">Todos los años</option>
-                        <option value="1">1er año</option>
-                        <option value="2">2do año</option>
-                        <option value="3">3er año</option>
-                        <option value="4">4to año</option>
-                        <option value="5">5to año</option>
-                    </select>
-                </div>
-            </aside>
+              </select>
+              <select id="ano">
+                <option value="todos">Todos los años</option>
+                <option value="1">1er año</option>
+                <option value="2">2do año</option>
+                <option value="3">3er año</option>
+                <option value="4">4to año</option>
+                <option value="5">5to año</option>
+              </select>
+            </div>
+          </aside>
 
-            <main class="content">
-                <div class="tabs">
-                    <button class="tab active" id="tab-activos">Estudiantes Activos</button>
-                    <button class="tab" id="tab-egresados">Egresados</button>
-                </div>
-                
-                <div class="students-grid" id="estudiantes-activos">
-                    <div class="student-card">
-                        <img src="/assets/img/perfil1.png" alt="Ana García" class="student-avatar">
-                        <h3>Ana García</h3>
-                        <p>Ingeniería Informática - 3º año</p>
-                        <a href="perfil.php" class="btn">Ver perfil</a>
-                    </div>
-                    <div class="student-card">
-                        <img src="/assets/img/perfil5.png" alt="Carlos Rodríguez" class="student-avatar">
-                        <h3>Carlos Rodríguez</h3>
-                        <p>Administración de Empresas - 4º año</p>
-                        <a href="perfilcarlos.php" class="btn">Ver perfil</a>
-                    </div>
-                    <div class="student-card">
-                        <img src="/assets/img/perfil3.png" alt="Laura Martínez" class="student-avatar">
-                        <h3>Laura Martínez</h3>
-                        <p>Psicología - 2º año</p>
-                        <a href="#" class="btn">Ver perfil</a>
-                    </div>
-                    <div class="student-card">
-                        <img src="/assets/img/perfil4.png" alt="Diego Sánchez" class="student-avatar">
-                        <h3>Diego Sánchez</h3>
-                        <p>Ingeniería Informática - 5º año</p>
-                        <a href="#" class="btn">Ver perfil</a>
-                    </div>
-                </div>
-                
-                <div class="students-grid" id="estudiantes-egresados" style="display: none;">
-                    <div class="student-card">
-                        <img src="/assets/image/perfil2.png" alt="María López" class="student-avatar">
-                        <h3>María López</h3>
-                        <p>Psicología - Egresado</p>
-                        <a href="#" class="btn">Ver perfil</a>
-                    </div>
-                    <div class="student-card">
-                        <img src="/src/image/perfil6.png" alt="Javier Fernández" class="student-avatar">
-                        <h3>Javier Fernández</h3>
-                        <p>Ingeniería Informática - Egresado</p>
-                        <a href="#" class="btn">Ver perfil</a>
-                    </div>
-                </div>
-            </main>
+          <main class="content md:pl-8">
+            <div class="tabs">
+              <button class="tab active" id="tab-activos">Estudiantes Activos</button>
+              <button class="tab" id="tab-egresados">Egresados</button>
+            </div>
+
+            <div class="students-grid" id="estudiantes-activos">
+              <div class="student-card">
+                <img src="./assets/img/perfil1.png" alt="Ana García" class="student-avatar">
+                <h3>Ana García</h3>
+                <p>Ingeniería Informática - 3º año</p>
+                <a href="perfil.php" class="btn">Ver perfil</a>
+              </div>
+              <div class="student-card">
+                <img src="./assets/img/perfil5.png" alt="Carlos Rodríguez" class="student-avatar">
+                <h3>Carlos Rodríguez</h3>
+                <p>Administración de Empresas - 4º año</p>
+                <a href="perfilcarlos.php" class="btn">Ver perfil</a>
+              </div>
+              <div class="student-card">
+                <img src="./assets/img/perfil3.png" alt="Laura Martínez" class="student-avatar">
+                <h3>Laura Martínez</h3>
+                <p>Psicología - 2º año</p>
+                <a href="#" class="btn">Ver perfil</a>
+              </div>
+              <div class="student-card">
+                <img src="./assets/img/perfil4.png" alt="Diego Sánchez" class="student-avatar">
+                <h3>Diego Sánchez</h3>
+                <p>Ingeniería Informática - 5º año</p>
+                <a href="#" class="btn">Ver perfil</a>
+              </div>
+            </div>
+
+            <div class="students-grid" id="estudiantes-egresados" style="display: none;">
+              <div class="student-card">
+                <img src="./assets/img/perfil2.png" alt="María López" class="student-avatar">
+                <h3>María López</h3>
+                <p>Psicología - Egresado</p>
+                <a href="#" class="btn">Ver perfil</a>
+              </div>
+              <div class="student-card">
+                <img src="./assets/img/perfil6.png" alt="Javier Fernández" class="student-avatar">
+                <h3>Javier Fernández</h3>
+                <p>Ingeniería Informática - Egresado</p>
+                <a href="#" class="btn">Ver perfil</a>
+              </div>
+            </div>
+          </main>
         </div>
-    </div>
+      </div>
 
-    <script>
+      <script>
         // Funcionalidad para cambiar entre pestañas
         document.getElementById('tab-activos').addEventListener('click', function() {
-            this.classList.add('active');
-            document.getElementById('tab-egresados').classList.remove('active');
-            document.getElementById('estudiantes-activos').style.display = 'grid';
-            document.getElementById('estudiantes-egresados').style.display = 'none';
+          this.classList.add('active');
+          document.getElementById('tab-egresados').classList.remove('active');
+          document.getElementById('estudiantes-activos').style.display = 'grid';
+          document.getElementById('estudiantes-egresados').style.display = 'none';
         });
 
         document.getElementById('tab-egresados').addEventListener('click', function() {
-            this.classList.add('active');
-            document.getElementById('tab-activos').classList.remove('active');
-            document.getElementById('estudiantes-egresados').style.display = 'grid';
-            document.getElementById('estudiantes-activos').style.display = 'none';
+          this.classList.add('active');
+          document.getElementById('tab-activos').classList.remove('active');
+          document.getElementById('estudiantes-egresados').style.display = 'grid';
+          document.getElementById('estudiantes-activos').style.display = 'none';
         });
 
         // Funcionalidad para desplegar/retraer la barra lateral
         document.querySelector('.sidebar-toggle').addEventListener('click', function() {
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.classList.toggle('expanded');
-            
-            if (sidebar.classList.contains('expanded')) {
-                this.textContent = '◀';
-                this.setAttribute('aria-label', 'Ocultar filtros');
-            } else {
-                this.textContent = '▶';
-                this.setAttribute('aria-label', 'Mostrar filtros');
-            }
+          const sidebar = document.querySelector('.sidebar');
+          sidebar.classList.toggle('expanded');
+
+          if (sidebar.classList.contains('expanded')) {
+            this.textContent = '◀';
+            this.setAttribute('aria-label', 'Ocultar filtros');
+          } else {
+            this.textContent = '▶';
+            this.setAttribute('aria-label', 'Mostrar filtros');
+          }
         });
 
         // Nota: La funcionalidad de filtrado requeriría JavaScript más complejo
         // y probablemente una base de datos en el lado del servidor.
-    </script>
+      </script>
       <!-- <div class="px-4 md:px-10 mx-auto w-full -m-24">
         <div class="flex flex-wrap">
           <div class="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
@@ -397,9 +405,9 @@ require(ROOT_PATH . DS . 'app' . DS . 'login' . DS . 'verificar-login.php');
                   </div>
                 </div>
               </div> -->
-              <!-- <div class="p-4 flex-auto">
+      <!-- <div class="p-4 flex-auto">
                 <!-- Chart -->
-                <!-- <div class="relative" style="height:350px">
+      <!-- <div class="relative" style="height:350px">
                   <canvas id="line-chart"></canvas>
                 </div>
               </div>
@@ -421,7 +429,7 @@ require(ROOT_PATH . DS . 'app' . DS . 'login' . DS . 'verificar-login.php');
               </div>
               <div class="p-4 flex-auto">
                 <!-- Chart -->
-                <!-- <div class="relative" style="height:350px">
+      <!-- <div class="relative" style="height:350px">
                   <canvas id="bar-chart"></canvas>
                 </div>
               </div>
@@ -447,7 +455,7 @@ require(ROOT_PATH . DS . 'app' . DS . 'login' . DS . 'verificar-login.php');
               </div>
               <div class="block w-full overflow-x-auto">
                 <!-- Projects table -->
-                <!-- <table class="items-center w-full bg-transparent border-collapse">
+      <!-- <table class="items-center w-full bg-transparent border-collapse">
                   <thead>
                     <tr>
                       <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
@@ -563,7 +571,7 @@ require(ROOT_PATH . DS . 'app' . DS . 'login' . DS . 'verificar-login.php');
               </div>
               <div class="block w-full overflow-x-auto">
                 <!-- Projects table -->
-                <!-- <table class="items-center w-full bg-transparent border-collapse">
+      <!-- <table class="items-center w-full bg-transparent border-collapse">
                   <thead class="thead-light">
                     <tr>
                       <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
@@ -708,227 +716,229 @@ require(ROOT_PATH . DS . 'app' . DS . 'login' . DS . 'verificar-login.php');
         </footer>
       </div>
     </div>
-  </div> --> 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" charset="utf-8"></script>
-  <script src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js" charset="utf-8"></script>
-  <script type="text/javascript">
-    /* Sidebar - Side navigation menu on mobile/responsive mode */
-    function toggleNavbar(collapseID) {
-      document.getElementById(collapseID).classList.toggle("hidden");
-      document.getElementById(collapseID).classList.toggle("bg-white");
-      document.getElementById(collapseID).classList.toggle("m-2");
-      document.getElementById(collapseID).classList.toggle("py-3");
-      document.getElementById(collapseID).classList.toggle("px-6");
-    }
-    /* Function for dropdowns */
-    function openDropdown(event, dropdownID) {
-      let element = event.target;
-      while (element.nodeName !== "A") {
-        element = element.parentNode;
-      }
-      var popper = Popper.createPopper(element, document.getElementById(dropdownID), {
-        placement: "bottom-end"
-      });
-      document.getElementById(dropdownID).classList.toggle("hidden");
-      document.getElementById(dropdownID).classList.toggle("block");
-    }
+  </div> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" charset="utf-8"></script>
+      <script src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js" charset="utf-8"></script>
+      <script type="text/javascript">
+        /* Sidebar - Side navigation menu on mobile/responsive mode */
+        function toggleNavbar(collapseID) {
+          document.getElementById(collapseID).classList.toggle("hidden");
+          document.getElementById(collapseID).classList.toggle("bg-white");
+          document.getElementById(collapseID).classList.toggle("m-2");
+          document.getElementById(collapseID).classList.toggle("py-3");
+          document.getElementById(collapseID).classList.toggle("px-6");
+        }
+        /* Function for dropdowns */
+        function openDropdown(event, dropdownID) {
+          let element = event.target;
+          while (element.nodeName !== "A") {
+            element = element.parentNode;
+          }
+          var popper = Popper.createPopper(element, document.getElementById(dropdownID), {
+            placement: "bottom-end"
+          });
+          document.getElementById(dropdownID).classList.toggle("hidden");
+          document.getElementById(dropdownID).classList.toggle("block");
+        }
 
 
-    (function() {
-      /* Add current date to the footer */
-      document.getElementById("javascript-date").innerHTML = new Date().getFullYear();
-      /* Chart initialisations */
-      /* Line Chart */
-      var config = {
-        type: "line",
-        data: {
-          labels: [
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July"
-          ],
-          datasets: [{
-              label: new Date().getFullYear(),
-              backgroundColor: "#4c51bf",
-              borderColor: "#4c51bf",
-              data: [65, 78, 66, 44, 56, 67, 75],
-              fill: false
+        (function() {
+          /* Add current date to the footer */
+          document.getElementById("javascript-date").innerHTML = new Date().getFullYear();
+          /* Chart initialisations */
+          /* Line Chart */
+          var config = {
+            type: "line",
+            data: {
+              labels: [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July"
+              ],
+              datasets: [{
+                  label: new Date().getFullYear(),
+                  backgroundColor: "#4c51bf",
+                  borderColor: "#4c51bf",
+                  data: [65, 78, 66, 44, 56, 67, 75],
+                  fill: false
+                },
+                {
+                  label: new Date().getFullYear() - 1,
+                  fill: false,
+                  backgroundColor: "#ed64a6",
+                  borderColor: "#ed64a6",
+                  data: [40, 68, 86, 74, 56, 60, 87]
+                }
+              ]
             },
-            {
-              label: new Date().getFullYear() - 1,
-              fill: false,
-              backgroundColor: "#ed64a6",
-              borderColor: "#ed64a6",
-              data: [40, 68, 86, 74, 56, 60, 87]
-            }
-          ]
-        },
-        options: {
-          maintainAspectRatio: false,
-          responsive: true,
-          title: {
-            display: false,
-            text: "Sales Charts",
-            fontColor: "white"
-          },
-          legend: {
-            labels: {
-              fontColor: "white"
-            },
-            align: "end",
-            position: "bottom"
-          },
-          tooltips: {
-            mode: "index",
-            intersect: false
-          },
-          hover: {
-            mode: "nearest",
-            intersect: true
-          },
-          scales: {
-            xAxes: [{
-              ticks: {
-                fontColor: "rgba(255,255,255,.7)"
-              },
-              display: true,
-              scaleLabel: {
+            options: {
+              maintainAspectRatio: false,
+              responsive: true,
+              title: {
                 display: false,
-                labelString: "Month",
+                text: "Sales Charts",
                 fontColor: "white"
               },
-              gridLines: {
-                display: false,
-                borderDash: [2],
-                borderDashOffset: [2],
-                color: "rgba(33, 37, 41, 0.3)",
-                zeroLineColor: "rgba(0, 0, 0, 0)",
-                zeroLineBorderDash: [2],
-                zeroLineBorderDashOffset: [2]
-              }
-            }],
-            yAxes: [{
-              ticks: {
-                fontColor: "rgba(255,255,255,.7)"
+              legend: {
+                labels: {
+                  fontColor: "white"
+                },
+                align: "end",
+                position: "bottom"
               },
-              display: true,
-              scaleLabel: {
-                display: false,
-                labelString: "Value",
-                fontColor: "white"
+              tooltips: {
+                mode: "index",
+                intersect: false
               },
-              gridLines: {
-                borderDash: [3],
-                borderDashOffset: [3],
-                drawBorder: false,
-                color: "rgba(255, 255, 255, 0.15)",
-                zeroLineColor: "rgba(33, 37, 41, 0)",
-                zeroLineBorderDash: [2],
-                zeroLineBorderDashOffset: [2]
+              hover: {
+                mode: "nearest",
+                intersect: true
+              },
+              scales: {
+                xAxes: [{
+                  ticks: {
+                    fontColor: "rgba(255,255,255,.7)"
+                  },
+                  display: true,
+                  scaleLabel: {
+                    display: false,
+                    labelString: "Month",
+                    fontColor: "white"
+                  },
+                  gridLines: {
+                    display: false,
+                    borderDash: [2],
+                    borderDashOffset: [2],
+                    color: "rgba(33, 37, 41, 0.3)",
+                    zeroLineColor: "rgba(0, 0, 0, 0)",
+                    zeroLineBorderDash: [2],
+                    zeroLineBorderDashOffset: [2]
+                  }
+                }],
+                yAxes: [{
+                  ticks: {
+                    fontColor: "rgba(255,255,255,.7)"
+                  },
+                  display: true,
+                  scaleLabel: {
+                    display: false,
+                    labelString: "Value",
+                    fontColor: "white"
+                  },
+                  gridLines: {
+                    borderDash: [3],
+                    borderDashOffset: [3],
+                    drawBorder: false,
+                    color: "rgba(255, 255, 255, 0.15)",
+                    zeroLineColor: "rgba(33, 37, 41, 0)",
+                    zeroLineBorderDash: [2],
+                    zeroLineBorderDashOffset: [2]
+                  }
+                }]
               }
-            }]
-          }
-        }
-      };
-      var ctx = document.getElementById("line-chart").getContext("2d");
-      window.myLine = new Chart(ctx, config);
-
-      /* Bar Chart */
-      config = {
-        type: "bar",
-        data: {
-          labels: [
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July"
-          ],
-          datasets: [{
-              label: new Date().getFullYear(),
-              backgroundColor: "#ed64a6",
-              borderColor: "#ed64a6",
-              data: [30, 78, 56, 34, 100, 45, 13],
-              fill: false,
-              barThickness: 8
-            },
-            {
-              label: new Date().getFullYear() - 1,
-              fill: false,
-              backgroundColor: "#4c51bf",
-              borderColor: "#4c51bf",
-              data: [27, 68, 86, 74, 10, 4, 87],
-              barThickness: 8
             }
-          ]
-        },
-        options: {
-          maintainAspectRatio: false,
-          responsive: true,
-          title: {
-            display: false,
-            text: "Orders Chart"
-          },
-          tooltips: {
-            mode: "index",
-            intersect: false
-          },
-          hover: {
-            mode: "nearest",
-            intersect: true
-          },
-          legend: {
-            labels: {
-              fontColor: "rgba(0,0,0,.4)"
+          };
+          var ctx = document.getElementById("line-chart").getContext("2d");
+          window.myLine = new Chart(ctx, config);
+
+          /* Bar Chart */
+          config = {
+            type: "bar",
+            data: {
+              labels: [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July"
+              ],
+              datasets: [{
+                  label: new Date().getFullYear(),
+                  backgroundColor: "#ed64a6",
+                  borderColor: "#ed64a6",
+                  data: [30, 78, 56, 34, 100, 45, 13],
+                  fill: false,
+                  barThickness: 8
+                },
+                {
+                  label: new Date().getFullYear() - 1,
+                  fill: false,
+                  backgroundColor: "#4c51bf",
+                  borderColor: "#4c51bf",
+                  data: [27, 68, 86, 74, 10, 4, 87],
+                  barThickness: 8
+                }
+              ]
             },
-            align: "end",
-            position: "bottom"
-          },
-          scales: {
-            xAxes: [{
-              display: false,
-              scaleLabel: {
-                display: true,
-                labelString: "Month"
-              },
-              gridLines: {
-                borderDash: [2],
-                borderDashOffset: [2],
-                color: "rgba(33, 37, 41, 0.3)",
-                zeroLineColor: "rgba(33, 37, 41, 0.3)",
-                zeroLineBorderDash: [2],
-                zeroLineBorderDashOffset: [2]
-              }
-            }],
-            yAxes: [{
-              display: true,
-              scaleLabel: {
+            options: {
+              maintainAspectRatio: false,
+              responsive: true,
+              title: {
                 display: false,
-                labelString: "Value"
+                text: "Orders Chart"
               },
-              gridLines: {
-                borderDash: [2],
-                drawBorder: false,
-                borderDashOffset: [2],
-                color: "rgba(33, 37, 41, 0.2)",
-                zeroLineColor: "rgba(33, 37, 41, 0.15)",
-                zeroLineBorderDash: [2],
-                zeroLineBorderDashOffset: [2]
+              tooltips: {
+                mode: "index",
+                intersect: false
+              },
+              hover: {
+                mode: "nearest",
+                intersect: true
+              },
+              legend: {
+                labels: {
+                  fontColor: "rgba(0,0,0,.4)"
+                },
+                align: "end",
+                position: "bottom"
+              },
+              scales: {
+                xAxes: [{
+                  display: false,
+                  scaleLabel: {
+                    display: true,
+                    labelString: "Month"
+                  },
+                  gridLines: {
+                    borderDash: [2],
+                    borderDashOffset: [2],
+                    color: "rgba(33, 37, 41, 0.3)",
+                    zeroLineColor: "rgba(33, 37, 41, 0.3)",
+                    zeroLineBorderDash: [2],
+                    zeroLineBorderDashOffset: [2]
+                  }
+                }],
+                yAxes: [{
+                  display: true,
+                  scaleLabel: {
+                    display: false,
+                    labelString: "Value"
+                  },
+                  gridLines: {
+                    borderDash: [2],
+                    drawBorder: false,
+                    borderDashOffset: [2],
+                    color: "rgba(33, 37, 41, 0.2)",
+                    zeroLineColor: "rgba(33, 37, 41, 0.15)",
+                    zeroLineBorderDash: [2],
+                    zeroLineBorderDashOffset: [2]
+                  }
+                }]
               }
-            }]
-          }
-        }
-      };
-      ctx = document.getElementById("bar-chart").getContext("2d");
-      window.myBar = new Chart(ctx, config);
-    })();
-  </script>
+            }
+          };
+          ctx = document.getElementById("bar-chart").getContext("2d");
+          window.myBar = new Chart(ctx, config);
+        })();
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

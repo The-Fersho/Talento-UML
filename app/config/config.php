@@ -1,9 +1,9 @@
 <?php
 //Create config.php file and add the configuration code in it
-$db['host'] = "127.0.0.1"; // Host name
-$db['user'] = "root"; // Mysql username
-$db['password'] = "12Neyzer"; // Mysql password
-$db['name'] = "feria"; // Database name
+$db['host'] = "b9kbc36pgljg5xvalgov-mysql.services.clever-cloud.com"; // Host name
+$db['user'] = "upov97yov4vuyeim"; // Mysql username
+$db['password'] = "oxcwTgSLQ8ybU4vp4x3I"; // Mysql password
+$db['name'] = "b9kbc36pgljg5xvalgov"; // Database name
 
 
 // Create connection

@@ -1,6 +1,7 @@
 .fondonavegacion{
   color: rgb(255, 255, 255);
   border: none;
+  width: 72px;
   padding: 5px 10px;
   border-radius: 5px;
   box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
@@ -8,5 +9,28 @@
   
   .radientback{
     background: linear-gradient(45deg,  rgb(0, 4, 255), #76bdff);
+    width: auto;
+    height: 400px;
+  }
 
+  .nombreinicionavbar{
+    /* alinear al centro */
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+  .contnavbar{
+    box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.2);
+    /* alinear items al centro */
+    padding-left: 50px;
+
+
+  }
+  .textoperfil{
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #4888ff;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    border-radius: 5px;
   }
