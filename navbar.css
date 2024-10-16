@@ -1,0 +1,12 @@
+.fondonavegacion{
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
+}
+  
+  .radientback{
+    background: linear-gradient(45deg,  rgb(0, 4, 255), #76bdff);
+
+  }
