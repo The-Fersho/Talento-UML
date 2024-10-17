@@ -8,7 +8,9 @@ require('./app/config/constantes.php');
     <title>Registrarse</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png" />
+
     <!-- implementar tailwind -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
@@ -148,7 +150,7 @@ body {
             </div>
 
             <div class="inp">
-              <input for="phone" type="text" class="input form-control" name="phone" placeholder="Telefno">
+              <input for="phone" type="text" class="input form-control" name="phone" placeholder="Telefono">
             </div>
 
             <div class="inp">
@@ -160,7 +162,7 @@ body {
             </div>
             <div class="centrar">
               <button type="submit" name="btnregistrar" value="ok" class="btnagregar submit btn btn-primary">agregar</button>
-              <p class="footer">ya tienes una cuenta <a href="login.php" class="link">Inicia Sesíon</a></p>
+              <p class="footer">ya tienes una cuenta <a href="login.php" class="link">Inicia sesión</a></p>
             </div>
           </form>
     
