@@ -152,7 +152,7 @@ require(ROOT_PATH . DS . 'app' . DS . 'login' . DS . 'verificar-login.php');
         </div>
       </nav>
       <!-- Header -->
-      <div class="relative radientback md:pt-24 pb-32 pt-12">
+      <div class="relative radientback md:pt-24 pb- h-auto pb-12 pt-12">
         <div class="px-4 md:pl-20 pr-10 mx-auto w-full">
           <div>
             <!-- Card stats -->
@@ -163,7 +163,7 @@ require(ROOT_PATH . DS . 'app' . DS . 'login' . DS . 'verificar-login.php');
                     <div class="flex flex-wrap">
                       <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
                         <h5 class="text-blueGray-400 uppercase font-bold text-xs">
-                          Traffic
+                          Estudiantes de 1ro y 2do año
                         </h5>
                         <span class="font-semibold text-xl text-blueGray-700">
                           350,897

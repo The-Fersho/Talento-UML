@@ -72,7 +72,7 @@ body {
   font-size: 14px;
   color: rgb(0, 4, 255);
 }
-.submit {
+.btnagregar {
   border: none;
   outline: none;
   width: 288px;
@@ -103,7 +103,7 @@ body {
   top: 0;
   right: 0;
   width: 460px;
-  height: 366px;
+  height: 407px;
   background: linear-gradient(to right, rgb(0, 4, 255), #76bdff);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%);
   padding-right: 60px;
@@ -161,7 +161,7 @@ body {
               <input type="password" for="pass" class="input form-control" name="pass"placeholder="Contraseña">
             </div>
             <div class="centrar">
-              <button type="submit" name="btnregistrar" value="ok" class="btnagregar submit btn btn-primary">agregar</button>
+              <button type="submit" name="btnregistrar" value="ok" class="btnagregar  btn btn-primary">agregar</button>
               <p class="footer">ya tienes una cuenta <a href="login.php" class="link">Inicia sesión</a></p>
             </div>
           </form>
